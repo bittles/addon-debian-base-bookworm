@@ -30,16 +30,16 @@ RUN \
     apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        bash=5.1-2+deb11u1 \
-        ca-certificates=20210119 \
-        curl=7.74.0-1.3+deb11u5 \
+        bash=5.2.15-2+b1 \
+        ca-certificates=20211016 \
+        curl=7.87.0-2 \
         jq=1.6-2.1 \
-        tzdata=2021a-1+deb11u8 \
-        xz-utils=5.2.5-2.1~deb11u1 \
+        tzdata=2022g-5 \
+        xz-utils=5.4.1-0.2 \
     \
     && c_rehash \
     \
-    && S6_ARCH="${BUILD_ARCH}" \
+    && S6_ARCH="aarch64" \
     && if [ "${BUILD_ARCH}" = "i386" ]; then S6_ARCH="i686"; \
     elif [ "${BUILD_ARCH}" = "amd64" ]; then S6_ARCH="x86_64"; \
     elif [ "${BUILD_ARCH}" = "armv7" ]; then S6_ARCH="arm"; fi \
