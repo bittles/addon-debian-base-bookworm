@@ -1,6 +1,6 @@
 #ARG BUILD_FROM=bookworm-20230208-slim
 # hadolint ignore=DL3006
-FROM bookworm-20230208-slim
+FROM debian:bookworm-20230208-slim
 
 # Environment variables
 ENV \
