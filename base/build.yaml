@@ -5,5 +5,5 @@ build_from:
   armhf: arm32v5/bookworm-20230208-slim
   armv7: arm32v7/bookworm-20230208-slim
   i386: i386/bookworm-20230208-slim
-codenotary:
-  signer: codenotary@frenck.dev
+#codenotary:
+#  signer: codenotary@frenck.dev
