@@ -1,4 +1,4 @@
-ARG BUILD_FROM=debian:bullseye-20230208-slim
+ARG BUILD_FROM=bookworm-20230208-slim
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
