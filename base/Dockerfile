@@ -1,6 +1,6 @@
-ARG BUILD_FROM=bookworm-20230208-slim
+#ARG BUILD_FROM=bookworm-20230208-slim
 # hadolint ignore=DL3006
-FROM ${BUILD_FROM}
+FROM bookworm-20230208-slim
 
 # Environment variables
 ENV \
